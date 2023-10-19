@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url(fonts/NotoSansOsmanya-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mooli';
+    src: url(fonts/Mooli-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Unb';
+    src: url(fonts/Unbounded-Regular.ttf);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    background: linear-gradient(to top right, #78ceff 30%, #c9faff 100%);
+    background-repeat: no-repeat;
+}
+
+.tudo {
+    display: flex;
+}
+
+.coluna {
+    margin: 0 20px;
+}
+
+header {
+    height: 55px;
+    background-color: #00538763;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.296);
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+header h1{
+    font: 500 30px 'NotoSans', sans-serif;
+    color: white;
+    padding-left: 10px;
+}
+
+header i{
+    font-size: 26px;
+
+}
+
+section h1{
+    font: 500 26px 'Unb', sans-serif;
+}
+
+section{
+    text-align: center;
+    margin: 60px 0;
+}
