@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
+    border: 0;
 }
 
 @font-face {
@@ -20,49 +20,113 @@
     src: url(fonts/Unbounded-Regular.ttf);
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
-html {
-    background: linear-gradient(to top right, #78ceff 30%, #c9faff 100%);
-    background-repeat: no-repeat;
+body {
+    background-image: url(img/galaxia.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #d64f3a;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.308);
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+    color: #ffffff;
+}
+
+header i {
+    font-size: 26px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-left: 10px;
+    font: 30px 'NotoSans', sans-serif;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 50px 80px 20px 80px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font: 16px 'Mooli', sans-serif;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #a54b3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font: 16px 'Mooli', sans-serif;
 }
 
 .tudo {
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .coluna {
-    margin: 0 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
 }
 
-header {
-    height: 55px;
-    background-color: rgba(130, 207, 255, 0.842);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.296);
+.coluna h2 {
+    font: 500 20px 'Unb', sans-serif;
+    margin-bottom: 10px;
+}
+
+.tarefas {
+    list-style: none;
+}
+
+.tarefa {
+    background-color: #f5f5f5f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(168, 168, 168);
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137); */
+    font: 500 16px 'Mooli', sans-serif;
+}
+
+.lixeira {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f57255;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 60px;
+    cursor: pointer;
 }
 
-header h1{
-    font: 500 30px 'NotoSans', sans-serif;
-    color: white;
-    padding-left: 10px;
-}
-
-header i{
-    font-size: 26px;
-
-}
-
-section h1{
-    font: 500 26px 'Unb', sans-serif;
-}
-
-section{
-    text-align: center;
-    margin: 60px 0;
+.lixeira i {
+    color: #fff;
+    font-size: 24px;
 }

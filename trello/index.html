@@ -15,9 +15,15 @@
         <h1>Trello</h1>
     </header>
 
-    <section>
+    <!-- <section>
         <h1>Minhas Tarefas:</h1>
-    </section>
+    </section> -->
+
+    <form id="adicionar-tarefa">
+        <!-- <label for="nova-tarefa">Tarefa:</label> -->
+        <input type="text" class="nova-tarefa" id="nova-tarefa">
+        <button type="submit">Adicionar</button>
+    </form>
 
     <div class="tudo">
         <div class="coluna" id="a-fazer">
@@ -36,11 +42,12 @@
         </div>
     </div>
 
-    <form id="adicionar-tarefa">
-        <label for="nova-tarefa">Tarefa:</label>
-        <input type="text" class="nova-tarefa" id="nova-tarefa">
-        <button type="submit">Adicionar</button>
-    </form>
+    <div class="lixeira" id="lixeira">
+        <i class="fas fa-trash"></i>
+    </div>
+    
+
+
 
     <script src="script.js"></script>
 </body>

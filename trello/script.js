@@ -59,3 +59,24 @@ function adicionarTarefa(event){
         novaTarefaLi.addEventListener("dragend", finalizarArrasto)
     }
 }
+
+const lixeira = document.getElementById("lixeira");
+
+lixeira.addEventListener("dragover", permitirSoltarNaLixeira);
+lixeira.addEventListener("drop", apagarTarefa);
+
+function permitirSoltarNaLixeira(event) {
+    event.preventDefault();
+}
+
+function apagarTarefa(event) {
+    event.preventDefault();
+
+    if (tarefaArrastada) {
+        // Verifica se a tarefa está sendo arrastada para a lixeira
+        if (event.target.closest(".lixeira")) {
+            tarefaArrastada.remove();
+        }
+        tarefaArrastada = null;
+    }
+}
