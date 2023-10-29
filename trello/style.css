@@ -40,7 +40,7 @@ html {
 
 header {
     height: 55px;
-    background-color: #00538763;
+    background-color: rgba(130, 207, 255, 0.842);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.296);
     display: flex;
     align-items: center;
